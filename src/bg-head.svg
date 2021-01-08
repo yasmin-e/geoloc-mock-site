@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="582" viewBox="0 0 1440 582">
+    <defs>
+        <linearGradient id="73v5a003pa" x1="50%" x2="50%" y1="100%" y2="40.008%">
+            <stop offset="0%" stop-color="#FFD9D9"/>
+            <stop offset="40.008%" stop-color="#FFD9D9"/>
+            <stop offset="100%" stop-color="#FFD8D8"/>
+        </linearGradient>
+        <linearGradient id="68qqjm4vmb" x1="69.862%" x2="3.971%" y1="57.956%" y2="45.827%">
+            <stop offset="0%" stop-color="#FF618F"/>
+            <stop offset="45.099%" stop-color="#FF6689"/>
+            <stop offset="100%" stop-color="#FF9587"/>
+        </linearGradient>
+        <linearGradient id="urqar5oiwc" x1="69.862%" x2="3.971%" y1="58.089%" y2="45.757%">
+            <stop offset="0%" stop-color="#FF618F"/>
+            <stop offset="45.099%" stop-color="#FF6689"/>
+            <stop offset="100%" stop-color="#FF9587"/>
+        </linearGradient>
+        <filter id="xfq5qqqxdd" width="102%" height="105.2%" x="-1%" y="-2.2%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 1 0 0 0 0 0.713852896 0 0 0 0 0.713852896 0 0 0 0.5 0"/>
+        </filter>
+        <path id="j0tnkazoge" d="M0 516.89c193.135 58.814 429.802 58.814 710 0 280.198-58.815 523.531-58.815 730 0V0H0v516.89z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <path fill="url(#73v5a003pa)" d="M0 492.934c193.135 56.088 429.802 56.088 710 0 280.198-56.089 523.531-56.089 730 0V0H0v492.934z" opacity=".8" transform="translate(0 -80) translate(0 80)"/>
+                <path fill="url(#68qqjm4vmb)" d="M0 531.89c194.745 58.814 433.384 58.814 715.917 0 282.533-58.815 527.894-58.815 736.083 0V15H0v516.89z" opacity=".289" transform="translate(0 -80) translate(0 80) matrix(-1 0 0 1 1452 0)"/>
+                <path fill="url(#urqar5oiwc)" d="M93 537.89c193.135 58.814 429.802 58.814 710 0 280.198-58.815 523.531-58.815 730 0V21H93v516.89z" opacity=".289" transform="translate(0 -80) translate(0 80)"/>
+                <g transform="translate(0 -80) translate(0 80)">
+                    <use fill="#000" filter="url(#xfq5qqqxdd)" xlink:href="#j0tnkazoge"/>
+                    <use fill="url(#urqar5oiwc)" xlink:href="#j0tnkazoge"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
