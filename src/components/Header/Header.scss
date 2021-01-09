@@ -25,7 +25,7 @@
   @include setSize(17em, 100%);
   #logo {
    @include setSize(60%, 60%);
-   margin: 5%;
+   margin: 2em;
   }
  }
  .track-btn-container {
@@ -39,10 +39,7 @@
  .language-settings {
   @extend .track-btn-container;
   @include setSize(5em, 100%);
-  #flag {
-   @include setSize(30%, auto);
-  }
-  #arrow {
+  #flag, #arrow {
    @include setSize(30%, auto);
   }
  }
