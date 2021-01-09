@@ -1,0 +1,24 @@
+@import '../../styles/utilities';
+@import '../../styles/colorpalette';
+
+.features {
+ @include setSize(100%, 30em);
+ @include flex(row, space-between, center);
+ .feat-container {
+  @include setSize(17em, 18em);
+  padding: 4%;
+ }
+ .feat-title,
+ .feat-text {
+  text-align: left;
+ }
+ .feat-title {
+  color: $title;
+ }
+ .feat-text {
+  color: $text;
+ }
+ .feat-img {
+  @include setSize(35%, auto);
+ }
+}
