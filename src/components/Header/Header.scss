@@ -1,0 +1,49 @@
+@import '../../styles/colorpalette';
+@import '../../styles/utilities';
+
+.header {
+ background: $background;
+ @include flex(row, space-between, center);
+ @include setSize(100%, 4em);
+ .nav {
+  list-style: none;
+  @include flex(row, space-between, center);
+  @include setSize(27em, 100%);
+  li a {
+   color: $navLink;
+   text-decoration: none;
+   font-weight: 500;
+   @include hover-active(pointer) {
+    color: $navLinkHover;
+    font-weight: 700;
+    transition: 0.3s;
+   }
+  }
+ }
+ .logo-container {
+  @extend .nav;
+  @include setSize(17em, 100%);
+  #logo {
+   @include setSize(60%, 60%);
+   margin: 5%;
+  }
+ }
+ .track-btn-container {
+  @include setSize(12.5em, 100%);
+  @include flex(row, center, center);
+  @include hover-active(pointer);
+  #track-btn {
+   @include setSize(85%, 85%);
+  }
+ }
+ .language-settings {
+  @extend .track-btn-container;
+  @include setSize(5em, 100%);
+  #flag {
+   @include setSize(30%, auto);
+  }
+  #arrow {
+   @include setSize(30%, auto);
+  }
+ }
+}
