@@ -1,0 +1,23 @@
+@mixin setSize($width, $height) {
+ width: $width;
+ height: $height;
+}
+
+@mixin flex($direction, $justify, $align) {
+ display: flex;
+ flex-direction: $direction;
+ justify-content: $justify;
+ align-items: $align;
+}
+
+@mixin hover-active ($cursor) {
+ &:hover {
+  @content;
+  cursor: $cursor;
+ }
+ &:active {
+  @content;
+  cursor: $cursor;
+  ;
+ }
+}
