@@ -1,0 +1,88 @@
+@import '../../styles/utilities';
+@import '../../styles/colorpalette';
+
+.headline {
+ background: $background url(../../assets/bg-head@3x.png);
+ background-size: 100% 100%;
+ @include setSize(100%, 32em);
+ @include flex(row, space-between, center);
+ .main-content {
+  margin-top: -6em;
+  margin-left: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: flex-start;
+  .headline-title {
+   margin: 0;
+   text-align: left;
+   font-weight: 600;
+   color: $background;
+   font-size: 2em;
+   span {
+    &::before {
+     content: "\A";
+    }
+   }
+  }
+  .headline-subtitle {
+   color: $background;
+   font-weight: 400;
+   font-size: 1.5em;
+  }
+  .form {
+   background: $background;
+   border-radius: 0.5em;
+   padding: 0.8em;
+   @include flex(row, flex-start, center);
+   @include setSize(20em, 1.7em);
+   #form-flag {
+    @include setSize(7%, auto);
+    @include hover-active(pointer);
+   }
+   #form-tick {
+    @include setSize(3%, auto);
+    margin-left: 3em;
+   }
+   #form-pen {
+    @include setSize(5%, auto);
+    margin-left: 2.5em;
+   }
+   #form-arrow {
+    @include hover-active(pointer);
+    @include setSize (4.5%, auto);
+   }
+   #phone-number {
+    @include setSize(10em, auto);
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-left: 1em;
+   }
+  }
+  button {
+   margin-top: 2em;
+   outline: none;
+   border: none;
+   border-radius: 0.5em;
+   background: $background;
+   color: $subtitle;
+   text-transform: uppercase;
+   letter-spacing: 0.2em;
+   font-weight: 600;
+   @include setSize(12em, 3.5em);
+   @include hover-active(pointer);
+  }
+ }
+ .headline-img-container {
+  .headline-img {
+   @include setSize(50%, 50%);
+   margin-top: 5em;
+   margin-left: 15em;
+  }
+ }
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
