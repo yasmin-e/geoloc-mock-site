@@ -1,0 +1,42 @@
+@import '../../styles/colorpalette';
+@import '../../styles/utilities';
+
+.demo {
+ @include setSize(100%, 45em);
+ @include flex(row, space-between, flex-start);
+ #demo-img {
+  @include setSize(40%, auto);
+  margin: 2em;
+ }
+ .demo-content {
+  @include flex(column, space-between, flex-start);
+  @include setSize(50em, auto);
+  margin: 3em;
+  #demo-title {
+   text-align: left;
+   color: $title;
+   margin-left: 3.3em;
+  }
+  .content-step {
+   @include flex(row, flex-start, flex-start);
+   .content-img {
+    @include setSize(10%, auto);
+    margin: 1em 1.5em;
+   }
+   .content-info {
+    @include setSize(25em, auto);
+    text-align: left;
+    .content-title {
+     font-size: 1em;
+     color: $subtitle;
+     font-weight: 700;
+    }
+    .content-text {
+     color: $text;
+     font-size: 0.9em;
+     margin-top: -1em;
+    }
+   }
+  }
+ }
+}
