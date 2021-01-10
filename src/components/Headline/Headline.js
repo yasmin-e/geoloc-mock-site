@@ -10,17 +10,16 @@ import './Headline.scss';
 function Headline() {
  return (
   <div className="headline">
-    {/* <div className="bg-container">
-      <img
-      src={Background}
-      id="bg"
-      alt="Gradient background"
-      />
-    </div> */}
-     <div className="main-content">
-       <h1 className="headline-title">HEY! 
+    <img
+      src={HeadlineImg}
+      className="headline-img"
+      alt="iPhone with Geoloc app"
+    />
+    <div className="main-content">
+      <h1 className="headline-title">HEY! 
         <br />
         <span>Tracking someone you care</span>
+        <br />
         <span>anywhere without worrying</span>
        </h1>
        <h2 className="headline-subtitle">Enter the phone number to track</h2>
@@ -57,13 +56,6 @@ function Headline() {
         Track
       </button>
      </div>
-     <div className="headline-img-container">
-       <img
-        src={HeadlineImg}
-        className="headline-img"
-        alt="iPhone with Geoloc app"
-        />
-      </div>
   </div>
  );
 }

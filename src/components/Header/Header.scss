@@ -8,8 +8,9 @@
  .nav {
   list-style: none;
   @include flex(row, space-between, center);
-  @include setSize(27em, 100%);
-  li a {
+  @include setSize(27em, auto);
+  overflow: hidden;
+  .nav-link {
    color: $navLink;
    text-decoration: none;
    font-weight: 500;
@@ -28,18 +29,16 @@
    margin: 2em;
   }
  }
- .track-btn-container {
-  @include setSize(12.5em, 100%);
-  @include flex(row, center, center);
-  @include hover-active(pointer);
   #track-btn {
-   @include setSize(85%, 85%);
+   @include setSize(13%, auto);
+   @include hover-active(pointer);
   }
- }
  .language-settings {
-  @extend .track-btn-container;
+  @include hover-active(pointer);
+  @include flex(row, center, center);
   @include setSize(5em, 100%);
   #flag, #arrow {
+   @include hover-active(pointer);
    @include setSize(30%, auto);
   }
  }

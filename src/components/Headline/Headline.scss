@@ -5,14 +5,16 @@
  background: $background url(../../assets/bg-head@3x.png);
  background-size: 100% 100%;
  @include setSize(100%, 32em);
- @include flex(row, space-between, center);
+ @include flex(row-reverse, space-between, center);
+ .headline-img {
+  @include setSize(32%, auto);
+  margin-top: 7em;
+  margin-right: 6em;
+ }
  .main-content {
-  margin-top: -6em;
+  margin-top: -3em;
   margin-left: 5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: flex-start;
+  @include flex(column, baseline, flex-start);
   .headline-title {
    margin: 0;
    text-align: left;
@@ -72,13 +74,6 @@
    font-weight: 600;
    @include setSize(12em, 3.5em);
    @include hover-active(pointer);
-  }
- }
- .headline-img-container {
-  .headline-img {
-   @include setSize(50%, 50%);
-   margin-top: 5em;
-   margin-left: 15em;
   }
  }
 }

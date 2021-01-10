@@ -17,33 +17,31 @@ function Header() {
    </div>
   <nav className="nav">
     <li>
-      <a href="/">
+      <a href="/" className="nav-link">
        Home
       </a>
      </li>
      <li>
-     <a href="/">
+     <a href="/" className="nav-link">
        How it Works
       </a>
      </li>
      <li>
-     <a href="/">
+     <a href="/" className="nav-link">
        Price
       </a>
      </li>
      <li>
-     <a href="/">
+     <a href="/" className="nav-link">
        FAQ
       </a>
      </li>
    </nav>
-   <div className="track-btn-container">
    <img 
     id="track-btn"
     src={Button}
     alt="Track button pink"
    />
-   </div>
   <div className="language-settings">
    <img
     src={FrenchFlag}
