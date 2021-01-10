@@ -6,7 +6,8 @@
  @include flex(row, space-between, center);
  .feat-container {
   @include setSize(17em, 18em);
-  padding: 4%;
+  margin-top: 2.5em;
+  padding: 7%;
  }
  .feat-title,
  .feat-text {
@@ -17,6 +18,7 @@
  }
  .feat-text {
   color: $text;
+  margin-top: -0.6em;
  }
  .feat-img {
   @include setSize(35%, auto);
