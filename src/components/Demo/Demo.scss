@@ -4,6 +4,7 @@
 .demo {
  @include setSize(100%, 45em);
  @include flex(row, space-between, flex-start);
+ margin-top: -5em;
  #demo-img {
   @include setSize(40%, auto);
   margin: 2em;
