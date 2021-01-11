@@ -6,6 +6,7 @@
  @include flex(row, space-between, center);
  .feat-container {
   @include setSize(17em, 18em);
+  @include flex(column, center, center);
   margin-top: 2.5em;
   padding: 7%;
  }
